@@ -6,7 +6,92 @@
         xmlns:local="clr-namespace:DemoImages"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    
     <Grid>
-        
+        <ScrollViewer Focusable="False" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!-- Cartões da parte superior da tela -->
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    
+                    <!-- Exemplo de cartão -->
+                    <Border Margin="20" BorderThickness="1" BorderBrush="Black" Background="#ffdd59" HorizontalAlignment="Center" VerticalAlignment="Top">
+                        <StackPanel Orientation="Vertical" Width="400">
+                            <TextBlock Margin="10" FontWeight="Bold">Subtítulo aqui:</TextBlock>
+                            <Separator />
+                            <TextBlock Margin="10" TextWrapping="WrapWithOverflow">
+                Lorem ipsum tempus cursus tristique elementum blandit aliquam netus, sapien venenatis morbi fames ut aliquet elit, habitant est sollicitudin morbi pretium habitant aptent. pharetra aenean tortor urna condimentum scelerisque eleifend sed ac gravida accumsan, bibendum amet semper vel fermentum a quis primis.
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                    <!-- /Exemplo de cartão -->
+
+                    <!-- Exemplo de cartão -->
+                    <Border Margin="20" BorderThickness="1" BorderBrush="Black" Background="#ffdd59" HorizontalAlignment="Center" VerticalAlignment="Top">
+                        <StackPanel Orientation="Vertical" Width="400">
+                            <TextBlock Margin="10" FontWeight="Bold">Subtítulo aqui:</TextBlock>
+                            <Separator />
+                            <TextBlock Margin="10" TextWrapping="WrapWithOverflow">
+                Lorem ipsum tempus cursus tristique elementum blandit aliquam netus, sapien venenatis morbi fames ut aliquet elit, habitant est sollicitudin morbi pretium habitant aptent. pharetra aenean tortor urna condimentum scelerisque eleifend sed ac gravida accumsan, bibendum amet semper vel fermentum a quis primis.
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                    <!-- /Exemplo de cartão -->
+
+                    <!-- Exemplo de cartão -->
+                    <Border Margin="20" BorderThickness="1" BorderBrush="Black" Background="#ffdd59" HorizontalAlignment="Center" VerticalAlignment="Top">
+                        <StackPanel Orientation="Vertical" Width="400">
+                            <TextBlock Margin="10" FontWeight="Bold">Subtítulo aqui:</TextBlock>
+                            <Separator />
+                            <TextBlock Margin="10" TextWrapping="WrapWithOverflow">
+                Lorem ipsum tempus cursus tristique elementum blandit aliquam netus, sapien venenatis morbi fames ut aliquet elit, habitant est sollicitudin morbi pretium habitant aptent. pharetra aenean tortor urna condimentum scelerisque eleifend sed ac gravida accumsan, bibendum amet semper vel fermentum a quis primis.
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                    <!-- /Exemplo de cartão -->
+                    
+                </StackPanel>
+                <!-- /Cartões da parte superior da tela -->
+
+                <Separator Grid.Row="1" Margin="10, 0" />
+
+                <StackPanel Grid.Row="2">
+                    <TextBlock Margin="20" FontSize="16" FontWeight="DemiBold">Título da galeria de imagens</TextBlock>
+
+                    <!-- Imagens da galeira dentro desse painel dentro desse painel -->
+                    <StackPanel Orientation="Horizontal">
+                        
+                        <!-- Cada StackPanel abaixo é uma imagem com descrição -->
+                        
+                        <StackPanel>
+                            <Border VerticalAlignment="Top" BorderThickness="1" BorderBrush="Black" Margin="10, 10, 10, 0">
+                                <Image Source="Images\image1.jpg" Stretch="UniformToFill" />
+                            </Border>
+                            <TextBlock FontStyle="Italic" FontSize="12" Margin="10, 0, 0, 0">Deusa prateada questionando</TextBlock>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Border VerticalAlignment="Top" BorderThickness="1" BorderBrush="Black" Margin="10, 10, 10, 0">
+                                <Image Source="Images\image2.jpg" Stretch="UniformToFill" />
+                            </Border>
+                            <TextBlock FontStyle="Italic" FontSize="12" Margin="10, 0, 0, 0">Deusa prateada supremacy</TextBlock>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Border VerticalAlignment="Top" BorderThickness="1" BorderBrush="Black" Margin="10, 10, 10, 0">
+                                <Image Source="Images\image3.jpg" Stretch="UniformToFill" />
+                            </Border>
+                            <TextBlock FontStyle="Italic" FontSize="12" Margin="10, 0, 0, 0">Deusa prateada desanimada</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <!-- /Imagens da galeira dentro desse painel dentro desse painel -->
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Window>
